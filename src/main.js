@@ -6,6 +6,11 @@ import vuetify from './plugins/vuetify'
 import * as VueGoogleMaps from 'vue2-google-maps';
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import "echarts";
+import VueECharts from "vue-echarts";
+
+
+Vue.component("v-chart", VueECharts);
 
 Vue.use(Toast);
 

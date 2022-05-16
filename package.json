@@ -16,18 +16,22 @@
     "highcharts-vue": "^1.3.5",
     "vue": "^2.6.12",
     "vue-apexcharts": "^1.6.1",
+    "vue-charts": "^0.2.1",
+    "vue-echarts": "^6.0.3",
     "vue-router": "^3.5.1",
     "vue-toastification": "^1.7.11",
     "vue2-google-maps": "^0.10.7",
     "vue2-perfect-scrollbar": "^1.5.0",
     "vuetify": "^2.4.9",
     "vuetrend": "^0.3.4",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.7",
     "@vue/cli-plugin-eslint": "~4.5.7",
     "@vue/cli-service": "~4.5.7",
+    "@vue/composition-api": "^1.6.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-plugin-vue": "^7.0.1",

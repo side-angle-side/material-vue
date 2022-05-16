@@ -13,6 +13,8 @@ import Charts from '@/pages/Charts/Charts'
 import Maps from '@/pages/Maps/Google'
 import Error from "@/pages/Error/Error";
 import Login from "@/pages/Login/Login";
+import Barchart from "@/pages/Barchart/Barchart";
+import Linechart from "@/pages/Linechart/Linechart";
 
 Vue.use(Router);
 
@@ -24,48 +26,58 @@ export default new Router({
       component: Login
     },
     {
-    path: '/',
-    redirect: 'login',
-    name: 'Layout',
-    component: Layout,
-    children: [
-      {
-        path: 'dashboard',
-        name: 'Dashboard',
-        component: Dashboard,
-      },
-      {
-        path: 'typography',
-        name: 'Typography',
-        component: Typography,
-      },
-      {
-        path: 'tables',
-        name: 'Tables',
-        component: Tables
-      },
-      {
-        path: 'notifications',
-        name: 'Notifications',
-        component: Notifications
-      },
-      {
-        path: 'icons',
-        name: 'Icons',
-        component: Icons
-      },
-      {
-        path: 'charts',
-        name: 'Charts',
-        component: Charts
-      },
-      {
-        path: 'maps',
-        name: 'Maps',
-        component: Maps
-      },
-    ],
-  },
+      path: '/',
+      redirect: 'login',
+      name: 'Layout',
+      component: Layout,
+      children: [
+        {
+          path: 'linechart',
+          name: 'Linechart',
+          component: Linechart,
+        },
+        {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: Dashboard,
+        },
+        {
+          path: 'typography',
+          name: 'Typography',
+          component: Typography,
+        },
+        {
+          path: 'tables',
+          name: 'Tables',
+          component: Tables
+        },
+        {
+          path: 'notifications',
+          name: 'Notifications',
+          component: Notifications
+        },
+        {
+          path: 'icons',
+          name: 'Icons',
+          component: Icons
+        },
+        {
+          path: 'charts',
+          name: 'Charts',
+          component: Charts
+        },
+        {
+          path: 'maps',
+          name: 'Maps',
+          component: Maps
+        },
+        {
+          path: 'barchart',
+          name: 'Barchart',
+          component: Barchart
+        },
+      ],
+    },
     {
       path: '*',
       name: 'Error',
